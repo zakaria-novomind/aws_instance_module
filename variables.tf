@@ -19,10 +19,9 @@ variable "subnet_id" {
 variable "key_pair_id" {
   type = list(string)
 }
-variable "sg_id" {
-  type = list(string)
+variable "sg_ids" {
+  type = list(list(string))
 }
 variable "number_of_servers" {
   type = number
 }
-
